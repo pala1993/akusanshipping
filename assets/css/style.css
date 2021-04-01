@@ -3560,7 +3560,7 @@ Shipping Area
 .shipping-area .shipping-img::before {
     content: '';
     position: absolute;
-    border: 4px solid #402c4e;
+    border: 0px solid #402c4e;
     border-radius: 5px;
     width: 70%;
     height: 100%;
