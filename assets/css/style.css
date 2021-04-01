@@ -3848,7 +3848,7 @@ Page banner Area
 
 .page-banner .page-content {
     margin-top: 115px;
-    background-color: rgba(48, 29, 68, 0.9);
+    /* background-color: rgba(48, 29, 68, 0.9); */
     max-width: 970px;
     padding: 40px 20px;
     border-radius: 5px;
@@ -7325,6 +7325,20 @@ only screen and (min-resolution: 2dppx) {
 
 section.what-we-do {
     padding: 0px 0 60px;
+}
+
+.d-table {
+    position: relative;
+}
+
+.d-table-cell::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(48, 29, 68, 0.4);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 a,
