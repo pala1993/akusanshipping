@@ -453,8 +453,10 @@
                 destination: connect,
                 getQuote: 'quote'
             }
-            if (formData.name == "" && formData.email == "" && formData.weight == "" && formData.phoneNumber == "" && formData.commodity == "" && formData.destination == "") {
-                console.log(formData.name);
+            console.log(formData);
+            // return;
+            if (formData.name == "" && formData.email == "" && formData.phoneNumber == "" && formData.weight == "" && formData.commodity == "") {
+
                 if (formData.name != "") {
                     document.getElementById('nameErr').innerHTML = ""
                 } else {
@@ -480,11 +482,7 @@
                 } else {
                     document.getElementById('commodityErr').innerHTML = "Commodity is required"
                 }
-                if (formData.destination != "") {
-                    document.getElementById('destinationErr').innerHTML = ""
-                } else {
-                    document.getElementById('destinationErr').innerHTML = "Destination is required"
-                }
+
 
 
             } else {
